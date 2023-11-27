@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title></title>
         <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <script src="emailvalidation.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -83,8 +84,31 @@
                             <td>$54,758</td>
                         </tr>
                     </table>
+                    <div class="formContainer">
+                        <p>
+                            <img class="sectionlogo" src="images/list-2389219_1280.png">
+                            Please fill out the form and ask any question you might have. Make sure to type in the correct email, in order to get a response from us.
+                        </p>
+                        <form id="stateForm">
+                            <label for="firstname">First Name: </label>
+                            <input type="text" name="firstname" id="firstname" placeholder="ex. John">
+
+                            <label for="lastname">Last Name: </label>
+                            <input type="text" name="lastname" id="lastname" placeholder="ex. Doe">
+
+                            <label for="email">Email: </label>
+                            <input type="text" name="email" id="email" placeholder="ex. example@email.com">
+
+                            <label for="confirmemail">Confirm Email: </label>
+                            <input type="text" name="confirmemail" id="confirmemail" placeholder="Verify email">
+
+                            <label for="question">Question: </label>
+                            <textarea name="question" id="question" placeholder="Place question here..."></textarea>
+
+                            <input type="submit" id="validate" value="Submit">
+                        </form>
+                    </div>
                 </section>
-                <img>
             </div>
             <aside class="aside">
                 <ul class="attractions">
